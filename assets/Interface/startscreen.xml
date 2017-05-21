@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<nifty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://nifty-gui.lessvoid.com/nifty-gui" xsi:schemaLocation="https://raw.githubusercontent.com/void256/nifty-gui/1.4/nifty-core/src/main/resources/nifty.xsd https://raw.githubusercontent.com/void256/nifty-gui/1.4/nifty-core/src/main/resources/nifty.xsd">
+    <useControls filename="nifty-default-controls.xml"/>
+    <useStyles filename="nifty-default-styles.xml"/>
+    
+    <!-- Menu Screen -->
+    <screen id="startscreen" controller="mygame.MyStartScreen">
+       <layer id="firstLayer" visible="true" visibleToMouse="true" backgroundImage="Materials/images.jpg" childLayout="absolute">
+           <control name="button" id="startGameButton" height="52px" backgroundColor="#3300ccff" width="234px" label="START GAME" childLayout="center" y="385" x="36">
+                <interact onClick="startGame(blasterMainScreen)" />
+           </control>     
+           <control name="button" id="quitGameButton" height="50px" backgroundColor="#330099ff" width="227px" label="QUIT GAME" childLayout="center" y="458" x="40"/>
+       </layer>
+    </screen>
+</nifty>
